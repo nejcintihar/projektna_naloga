@@ -4,17 +4,19 @@
 
 ### `git clone https://github.com/nejcintihar/projektna_naloga.git`
 
-#2. Odprite terminal in pojdite v 'projektna_naloga'
+# 2. Odprite terminal in pojdite v 'projektna_naloga'
 
 ### `cd projektna_naloga/`
 
-#3. ### `npm start`
+# 3. Probajte npm start
 
-#4. Verjetno boste dobili ta error saj v novi mapi ni NPM-a noter
+### `npm start`
+
+# 4. Verjetno boste dobili ta error saj v novi mapi ni NPM-a noter
 
 ![image](https://user-images.githubusercontent.com/63637814/224128394-d8fcca4b-f3d8-4520-91d8-eb9c9f7a7bf1.png)
 
-#5. Napisite to komando: ### `npm install` in se enkrat ### `npm start`
+# 5. Napisite to komando: ### `npm install` in se enkrat ### `npm start`
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
