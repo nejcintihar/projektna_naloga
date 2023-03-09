@@ -2,11 +2,11 @@
 
 # 1. Clone repo v poljubno mapo
 
-### `git clone https://github.com/nejcintihar/projektna_naloga.git`
+`git clone https://github.com/nejcintihar/projektna_naloga.git`
 
 # 2. Odprite terminal in pojdite v 'projektna_naloga'
 
-### `cd projektna_naloga/`
+`cd projektna_naloga/`
 
 # 3. Probajte npm start
 
