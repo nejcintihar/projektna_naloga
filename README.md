@@ -16,7 +16,7 @@
 
 ![image](https://user-images.githubusercontent.com/63637814/224128394-d8fcca4b-f3d8-4520-91d8-eb9c9f7a7bf1.png)
 
-# 5. Napisite to komando: ### `npm install` in se enkrat ### `npm start`
+# 5. Napisite to komando: `npm install` in se enkrat `npm start`
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
