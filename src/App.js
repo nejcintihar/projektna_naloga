@@ -7,6 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Button>Test button</Button>
+
+        <p>To je nova sprememba :O</p>
+
       </header>
     </div>
   );
