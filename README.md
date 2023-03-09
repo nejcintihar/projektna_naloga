@@ -1,3 +1,24 @@
+# READ ME
+
+# 1. Clone repo v poljubno mapo
+
+### `git clone https://github.com/nejcintihar/projektna_naloga.git`
+
+#2. Odprite terminal in pojdite v 'projektna_naloga'
+
+### `cd projektna_naloga/`
+
+#3. ### `npm start`
+
+#4. Verjetno boste dobili ta error saj v novi mapi ni NPM-a noter
+
+![image](https://user-images.githubusercontent.com/63637814/224128394-d8fcca4b-f3d8-4520-91d8-eb9c9f7a7bf1.png)
+
+#5. Napisite to komando: ### `npm install` in se enkrat ### `npm start`
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
