@@ -18,6 +18,12 @@
 
 # 5. Napisite to komando: `npm install` in se enkrat `npm start`
 
+# 6. Don't worry bout the warning :))
+
+![image](https://user-images.githubusercontent.com/63637814/224130169-3fe8a2dc-dafc-4d9d-98d0-2cd716da3e83.png)
+
+That's it :D
+
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
