@@ -73,6 +73,13 @@ body {
   margin: 0
 }
 
+header {
+  display: flex;
+  align-items: center;
+  margin: 1em auto;
+}
+
+
 
 .header-nav {
   background-color: transparent;
@@ -81,23 +88,24 @@ body {
   align-items: center;
   gap: 4em;
   width: 60%;
-  margin-top: 2em;
   margin-left: auto;
-  margin-right: auto;
   border-radius: .4em;
-  
 }
 
-.header-nav a {
+header a {
   color: rgb(181, 181, 181);
   text-decoration: none;
   font-size: 2em;
   font-weight: 400;
   font-size: 1.3em;
-
 }
 
-.header-nav a:hover {
+
+.newthing {
+  color: red
+}
+
+header a:hover {
   color: white;
 }
 
@@ -140,7 +148,6 @@ body {
   margin-left: .8em;
   margin-right: auto;
   width: 2em;
-  
 }
 
 .footer-element {
