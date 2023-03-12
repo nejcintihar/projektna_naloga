@@ -8,7 +8,7 @@ export default [
         play: true,
         id: 1,
         key: 1,
-        path: ""
+        path: "tictactoe"
     },
     {
         name: "crazy 8",

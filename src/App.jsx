@@ -5,6 +5,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import "./index.css"
 import Tenzies from "./Components/Tenzies"
+import TicTacToe from "./Components/TicTacToe"
 
 
 import About from "./Components/About"
@@ -21,6 +22,7 @@ function App() {
           <Route path="games">
             <Route index element={<Games />} />
             <Route path="tenzies" element={<Tenzies />} />
+            <Route path="tictactoe" element={<TicTacToe />} />
           </Route>
           <Route path="contact" element={<Contact />} />
         </Route>
