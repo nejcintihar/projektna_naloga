@@ -18,7 +18,7 @@ body {
   --green: linear-gradient(269.54deg, #04943D 0.35%, #3BA465 39.65%, #088239 98.34%);;
   --card-background: linear-gradient(202.87deg, rgba(57, 144, 150, 0.47) 11.32%, rgba(121, 2, 140, 0) 99.07%);
   --remove-background: linear-gradient(268.83deg, rgba(207, 242, 240, 0.73) 2%, rgba(217, 217, 218, 0.73) 51.25%, rgba(243, 231, 240, 0.73) 96.52%);
-  --blue-styled: linear-gradient(269.03deg, #0A8495 3.53%, #1B70BF 79.81%);
+  --blue-styled: linear-gradient(269.03deg, #0A8495 3.53%, #1b70bf 79.81%);
 }
 
 .the-gaming-world-hero {
@@ -48,8 +48,8 @@ body {
 }
 
 .fuck-css-and-my-life {
-  width: 18em;
-  height: 18em;
+  width: 16em;
+  height: 16em;
 }
 
 .comp-wrapper {
@@ -74,29 +74,11 @@ body {
   margin-top: 8em;
 }
 
-/* .comp-wrapper {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;display: flex;
-  justify-content: space-between;
-} */
-
 .logo-header {
   width: 3em;
   margin-right: auto;
   position: relative;
   top: -2px;
-}
-
-.hero-the {
-  margin: 0
-}
-.hero-gaming {
-  margin: 0
-}
-.hero-world {
-  margin: 0
 }
 
 header {
@@ -185,7 +167,8 @@ header a:hover {
   width: 100%;
   gap: 3em;
   bottom: 0;
-  
+  box-shadow: -6px 0 25px rgba(0, 0, 0, 0.25);
+  padding-top: .8em;
 }
 
 .footer-element a {
@@ -256,18 +239,35 @@ header a:hover {
   margin-left: 1em;
 }
 
-
 .place-order-button {
   margin-left: auto;
   margin-right: auto;
   padding: .7em;
+  user-select: none;
   font-size: .9em;
+  color: rgb(234, 234, 234);
   width: 100%;
+  border: none;
   text-align: center;
   background: var(--green);
-  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.14);
   border-radius: 13px;
-  /*background: kurac jebeni */
+  background-size: 120%;
+  background-position: right;
+  transition: background-position .2s, color .2s, box-shadow .2s;
+}
+
+.place-order-button:focus {
+  outline: none;
+}
+
+.place-order-button:hover {
+    background-position: left;
+    color: white;
+    cursor: pointer;
+}
+
+.place-order-button:active{
+  box-shadow: inset 3px 3px 7px -2px rgba(0, 0, 0, 0.4);
 }
 
 .games-container {
@@ -297,11 +297,11 @@ header a:hover {
   color: white
 }
 
-
 .body-of-game h1 {
   font-size: 1.4em;
   text-align: center;
 }
+
 .play-now {
   background: var(--green);
   padding: .5em;
@@ -309,11 +309,14 @@ header a:hover {
   font-size: .8em;
   user-select: none;
   text-decoration: none;
-  color: white
+  color: white;
+  background-size: 130%;
+  background-position: right;
+  transition: background-position 0.2s;
 }
 
 .play-now:hover {
-  color: var(--blue-styled)
+  background-position: left;
 }
 
 .game-price {
@@ -335,7 +338,7 @@ header a:hover {
   font-size: .75em;
   text-decoration: none;
   user-select: none;
-  
+  cursor: pointer;
 }
 
 .game-name {
@@ -353,14 +356,18 @@ header a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 0 0px 10px 10px;
-  color:#272727;
-  font-weight: 800;
+  color:white;
+  font-weight: 500;
   font-size: .75em;
   user-select: none;
-  transition: transform 0.1s;
+  cursor: pointer;
+  transition:background-position .2s, transform 0.15s;
+  background-size: 130%;
+  background-position: left;
 }
 
 .add-from-basket:hover{
+  background-position: right;
   transform: translateY(-3px);
 }
 
@@ -382,7 +389,6 @@ header a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
   margin: auto;
   margin-top: 7em;
 }
