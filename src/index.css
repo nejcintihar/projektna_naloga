@@ -107,7 +107,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 4em;
-  width: 60%;
+  width: 25em;
   margin-left: auto;
   border-radius: .4em;
 }
@@ -131,14 +131,13 @@ header a:hover {
 .login-button {
   background: linear-gradient(84.3deg, #1A78CF -11.45%, #B163EE 70.14%, #FE19BE 112.52%);
   color: rgb(198, 198, 198);
-  margin-left: auto;
+  margin-left: 2em;
   margin-right: 1em;
   border: none;
   border-radius: .5em;
   width: 5em;
   font-size: 1.4rem;
   height: 1.5em;
-
   font-weight: 700;
   box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.25);
 }
