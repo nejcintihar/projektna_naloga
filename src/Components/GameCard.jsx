@@ -9,7 +9,7 @@ export default function GameCard(props) {
             <div className="body-of-game">
                 <h1 className="game-name">{props.name}</h1>
                     <div className="info-buttons"> 
-                        {props.play ? <Link className="play-now" to={props.path}>play game</Link> : "no trial"}
+                        {props.play ? <Link className="play-now" to={props.path}>play game</Link> : <span class="no-trial">no demo</span>}
                         <p className="game-price">{props.price}$</p>
                     </div>
             </div>
