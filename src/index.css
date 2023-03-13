@@ -21,6 +21,7 @@ body {
   --remove-background: linear-gradient(268.83deg, rgba(207, 242, 240, 0.73) 2%, rgba(217, 217, 218, 0.73) 51.25%, rgba(243, 231, 240, 0.73) 96.52%);
   --blue-styled: linear-gradient(269.03deg, #0A8495 3.53%, #1b70bf 79.81%);
   --text-color: #D9DDE2;
+  --border-wrappers: rgba(182, 182, 182, 0.133);
 }
 
 .the-gaming-world-hero {
@@ -213,6 +214,7 @@ header a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid var(--border-wrappers);
 }
 
 .checkout-wrapper h1:nth-of-type(3) {
@@ -250,7 +252,9 @@ header a:hover {
   width: 660px; 
   height: 525px;
   padding: 1em;
+  border: 1px solid var(--border-wrappers)
   /* width: 40em; */
+  
 }
 
 .games-title {
@@ -516,6 +520,7 @@ header a:hover {
   user-select: none;
   color: var(--text-color);
   transition: color .5s;
+  
 }
 
 .checkout-container:hover {
