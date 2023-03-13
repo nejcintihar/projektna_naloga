@@ -3,20 +3,21 @@ import { Link, NavLink } from "react-router-dom"
 import "../index.css"
 import logo from "../assets/Epic_Games_logo.svg"
 import Applelogo from "../assets/Apple_logo.svg"
+import { FaGamepad } from "react-icons/fa"
 
 export default function Header() {
 
     const activeStyles = {
-        fontWeight: "bold",
+        fontWeight: "600",
         textDecoration: "underline",
-        textDecorationColor: "#fed5ff",
+        textDecorationColor: "#D9DDE2",
         color: "white"
     }
 
-
     return (
         <header >
-            <img src={ Applelogo } width="22px" className="logo-header"></img>
+            <FaGamepad  className="logo-header"/>
+            {/* <img src={ FaGamepad } width="22px" className="logo-header"></img> */}
             <nav className="header-nav">
                     <NavLink to="."
                         style={({isActive}) => isActive ? activeStyles : null}

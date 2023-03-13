@@ -1,7 +1,7 @@
 import React from "react";
 import CheckoutItem from "./CheckoutItem"
 import gamesData from "../gamesData"
-import GameCard from "./GameCard";
+import GameCard from "./GameCard"
 
 export default function Games() {
 
