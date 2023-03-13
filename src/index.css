@@ -45,8 +45,12 @@ body {
 .s  {
   display: flex;
   /* border: 3px solid red; */
+  width: 960px;
+  height: 256px;
+  margin: 6em auto 2em;
   justify-content: space-between;
-  align-items:end
+  align-items:end;
+  /* border: 3px solid rgb(30, 255, 176); */
 }
 
 .fuck-css-and-my-life {
@@ -55,8 +59,9 @@ body {
 }
 
 .comp-wrapper {
-  width: 960px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .comp-wrapper p {
@@ -65,7 +70,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-top: 2em;
+  margin-top: 0em;
   
 }
 
@@ -193,7 +198,7 @@ header a:hover {
   justify-content: space-between;
   max-width: 960px;
   margin: auto;
-  margin-top: 5em;
+  margin-top: 6em;
   gap: 2em;
 }
 
@@ -404,10 +409,10 @@ header a:hover {
 /* /////////////////////////////////////////////////////////////////////*/
 
 .tenzies-container {
-  background: var(--card-background);
+  background: rgba(0, 0, 0, 0.32);
   height: 500px;
   max-width: 600px;
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 20px;
   display: flex;
   flex-direction: column;
