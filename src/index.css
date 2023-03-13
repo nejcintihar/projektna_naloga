@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: Poppins;
+  font-family: Inter;
   background-image: url("./assets/background-blur.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +19,7 @@ body {
   --card-background: linear-gradient(202.87deg, rgba(57, 144, 150, 0.47) 11.32%, rgba(121, 2, 140, 0) 99.07%);
   --remove-background: linear-gradient(268.83deg, rgba(207, 242, 240, 0.73) 2%, rgba(217, 217, 218, 0.73) 51.25%, rgba(243, 231, 240, 0.73) 96.52%);
   --blue-styled: linear-gradient(269.03deg, #0A8495 3.53%, #1b70bf 79.81%);
+  --text-color: #D9DDE2;
 }
 
 .the-gaming-world-hero {
@@ -103,7 +104,7 @@ header {
 }
 
 header a {
-  color: rgb(181, 181, 181);
+  color: var(--text-color);
   text-decoration: none;
   font-size: 2em;
   font-weight: 400;
@@ -187,17 +188,17 @@ header a:hover {
 .games-wrapper-main {
   display: flex;
   justify-content: space-between;
-  max-width: 60em;
+  max-width: 50em;
   margin: auto;
   margin-top: 5em;
   gap: 2em;
 }
 
 .checkout-wrapper {
-  color: white;
+  color: var(--text-color);
   background: rgba(0, 0, 0, 0.32);
   border-radius: 13px;
-  width: 250px; 
+  width: 350px; 
   height: 525px;
   padding: 1em;
   display: flex;
@@ -205,8 +206,16 @@ header a:hover {
   justify-content: space-between;
 }
 
+.checkout-wrapper h1:nth-of-type(3) {
+  font-size: 1.2em;
+}
+.checkout-wrapper h1:nth-of-type(2) {
+  font-size: 1.2em;
+}
+
 .checkout-wrapper h1 {
-  font-size: 1.6em;
+  font-size: 1.3em;
+  user-select: none;
 }
 
 .checkout-wrapper h2 {
@@ -218,7 +227,12 @@ header a:hover {
 }
 
 .price-checkout {
-  margin-top: auto;
+
+  margin-top: .2em;
+  border-bottom: 2px solid rgba(205, 205, 205, 0.1);
+  padding-bottom: .2em;
+  margin-bottom: .4em;
+  font-weight: 600;
 }
 
 .games-wrapper {
@@ -232,19 +246,22 @@ header a:hover {
 }
 
 .games-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  color: var(--text-color);
+  user-select: none;
 }
 
 .checkout-list {
   margin-left: 1em;
+  margin-top: 1em;
 }
 
 .place-order-button {
   margin-left: auto;
   margin-right: auto;
-  padding: .7em;
+  padding: .5em;
   user-select: none;
-  font-size: .9em;
+  font-size: 1.2em;
   color: rgb(234, 234, 234);
   width: 100%;
   border: none;
@@ -304,7 +321,7 @@ header a:hover {
 
 .play-now {
   background: var(--green);
-  padding: .5em;
+  padding: .3em;
   border-radius: 0 10px 0 0;
   font-size: .8em;
   user-select: none;
@@ -321,6 +338,11 @@ header a:hover {
 
 .game-price {
   margin-right: .3em;
+  background-color: var(--remove-background);
+  font-size: .8em;
+  padding: .3em;
+  margin-right: 0;
+  border-radius: 12px 0 0 0;
 }
 
 .remove-from-basket {
@@ -447,4 +469,45 @@ header a:hover {
 
 .roll-dice:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.checkout-container {
+  width: 93%;
+/*   background-color: red; */
+  padding-bottom: .2em;
+  padding-top: .1em;
+  border-bottom: 2px solid rgba(205, 205, 205, 0.1);;
+  font-size: 1.4em;
+  user-select: none;
+  color: var(--text-color);
+  transition: color .5s;
+}
+
+.checkout-container:hover {
+  color: white
+}
+
+.bolded-price {
+  font-weight: 600;
+}
+
+.game-name-style {
+  font-weight: 300;
+  font-size: .2em;
+}
+
+.game-price-style {
+  font-weight: 300;
+  
+}
+
+.checkout-container:last-of-type {
+  border-bottom: none;
+}
+
+.total-items-style {
+  color: #5C8ED9;
+  margin-top: auto;
 }

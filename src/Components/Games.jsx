@@ -49,8 +49,9 @@ export default function Games() {
             <h1>Items in basket</h1>
                 <div className="checkout-list">
                     {basketItems}
-                    <h1>Total Items: {totalItems.length}</h1>
+                    
                 </div>
+                <h1 className="total-items-style">Total Items: {totalItems.length}</h1>
                 <h1 className="price-checkout">Price: {sum}$</h1>
                 <div className="place-order-button">Place your order</div>
             </div>
