@@ -199,6 +199,7 @@ header a:hover {
   max-width: 960px;
   margin: auto;
   margin-top: 6em;
+  padding-bottom: 0;
   gap: 2em;
 }
 
@@ -238,7 +239,7 @@ header a:hover {
   margin-top: .2em;
   border-bottom: 2px solid rgba(205, 205, 205, 0.1);
   padding-bottom: .2em;
-  margin-bottom: .4em;
+  margin-bottom: .8em;
   font-weight: 600;
 }
 
@@ -295,11 +296,11 @@ header a:hover {
 }
 
 .games-container {
-  margin-top: 1.5em;
+  margin-top: 2.6em;
   width: 100%;
   height: 91%;
   display: grid;
-  gap: 1em;
+  column-gap: 1.4em;
   align-items: top;
   justify-items: center;
   grid-template: auto auto / repeat(3, 1fr);
@@ -308,6 +309,7 @@ header a:hover {
 .game-holder-main {
     width: 150px;
     border-radius: 10px;
+    
 }
 
 .body-of-game {
@@ -318,7 +320,9 @@ header a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: white
+  color: white;
+  border: 1px solid rgba(157, 157, 157, 0.37);
+  border-bottom: none;
 }
 
 .body-of-game h1 {
@@ -330,19 +334,32 @@ header a:hover {
 
 .play-now {
   background: var(--green);
-  padding: .3em;
+  padding: .3em .5em;
   border-radius: 0 10px 0 0;
   font-size: .8rem;
   user-select: none;
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   background-size: 130%;
   background-position: right;
-  transition: background-position 0.2s;
+  transition: background-position 0.2s, color .3s;
 }
 
 .play-now:hover {
   background-position: left;
+  color: white;
+}
+
+.no-trial {
+  background: linear-gradient(266.25deg, #F19408 10.22%, #A37500 88.43%);
+  padding: .3em .6em;
+  border-radius: 0 10px 0 0;
+  
+  font-size: .8rem;
+  user-select: none;
+  text-decoration: none;
+  color: var(--text-color);
+  color: #272727;
 }
 
 .game-price {
@@ -350,8 +367,12 @@ header a:hover {
   background-color: var(--remove-background);
   font-size: .8rem;
   padding: .3em;
+  font-weight: 600;
+  user-select: none;
+  background: var(--card-background);
   margin-right: 0;
   border-radius: 12px 0 0 0;
+  color: var(--text-color)
 }
 
 .remove-from-basket {
@@ -369,6 +390,8 @@ header a:hover {
   text-decoration: none;
   user-select: none;
   cursor: pointer;
+  border: 1px solid rgba(20, 20, 20, 0.572);
+  border-top: none;
 }
 
 .game-name {
@@ -377,7 +400,7 @@ header a:hover {
 }
 
 .add-from-basket {
-  height: 40px;
+  height: 42.45px;
   background: var(--blue-styled);
   width: 100%;
   padding: .5em;
@@ -385,19 +408,22 @@ header a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 0 0px 10px 10px;
-  color:white;
-  font-weight: 500;
-  font-size: .75rem;
+  color:var(--text-color);
+  font-weight: 400;
+  font-size: .85rem;
   user-select: none;
   cursor: pointer;
-  transition:background-position .2s, transform 0.15s;
+  transition:background-position .2s, transform 0.15s, color .2s;
   background-size: 130%;
   background-position: left;
+  border: 1px solid rgba(61, 61, 61, 0.57);
+  border-top: none;
 }
 
 .add-from-basket:hover{
   background-position: right;
   transform: translateY(-3px);
+  color: white;
 }
 
 .info-buttons {
