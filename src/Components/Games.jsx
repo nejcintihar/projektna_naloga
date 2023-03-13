@@ -50,7 +50,7 @@ export default function Games() {
                 <div className="checkout-list">
                     {basketItems}
                 </div>
-                <h1 className="total-items-style">Total Items: {totalItems.length}</h1>
+                <h1 className="total-items-style">{totalItems.length} Items</h1>
                 <h1 className="price-checkout">Price: {sum}$</h1>
                 <div className="place-order-button">Place your order</div>
             </div>
