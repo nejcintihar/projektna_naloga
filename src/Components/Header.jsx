@@ -5,15 +5,29 @@ import logo from "../assets/Epic_Games_logo.svg"
 import Applelogo from "../assets/Apple_logo.svg"
 
 export default function Header() {
+
+    const activeStyles = {
+        fontWeight: "bold",
+        textDecoration: "underline",
+        color: "white"
+    }
+
+
     return (
-        <header>
+        <header >
+            <img src={ Applelogo } width="22px" className="logo-header"></img>
             <nav className="header-nav">
-                <img src={ Applelogo } width="22px" className="logo-header"></img>
-                    <NavLink to=".">About</NavLink>
-                    <NavLink to="games">Games</NavLink>
-                    <NavLink to="contact">Contact</NavLink>
-                <button className="login-button">Login</button>
+                    <NavLink to="."
+                        style={({isActive}) => isActive ? activeStyles : null}
+                    >About</NavLink>
+                    <NavLink to="games" 
+                        style={({isActive}) => isActive ? activeStyles : null}
+                    >Games</NavLink>
+                    <NavLink to="contact"
+                        style={({isActive}) => isActive ? activeStyles : null}
+                    >Contact</NavLink>
             </nav>
+            <button className="login-button">Login</button>
         </header>
     )
 }
