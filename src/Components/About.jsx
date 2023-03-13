@@ -20,7 +20,6 @@ export default function About() {
                             aliquid corporis rem odit eius at dolores mollitia expedita maiores
                             explicabo omnis, natus ex hic debitis facilis ea.
                         </p>
-            
             {/*  <img src={glow} className="hero-img"></img> */}
         </div>
     )

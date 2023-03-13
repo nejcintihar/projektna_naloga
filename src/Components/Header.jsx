@@ -9,6 +9,7 @@ export default function Header() {
     const activeStyles = {
         fontWeight: "bold",
         textDecoration: "underline",
+        textDecorationColor: "#fed5ff",
         color: "white"
     }
 
