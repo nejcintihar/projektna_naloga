@@ -54,11 +54,9 @@ export default function Games() {
                 <h1 className="price-checkout">Price: {sum}$</h1>
                 <div className="place-order-button">Place your order</div>
             </div>
-            <div className="games-wrapper">
-                <h1 className="games-title">Games</h1>
-                <div className="games-container">
-                {gameElements}
-                </div>
+                <div className="games-wrapper">
+                    <h1 className="games-title">Games</h1>
+                    <div className="games-container">{gameElements}</div>
             </div>
         </div>
     )

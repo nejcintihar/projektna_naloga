@@ -200,14 +200,14 @@ header a:hover {
   margin: auto;
   margin-top: 6em;
   padding-bottom: 0;
-  gap: 2em;
+  gap: 1.5em;
 }
 
 .checkout-wrapper {
   color: var(--text-color);
   background: rgba(0, 0, 0, 0.32);
   border-radius: 13px;
-  width: 350px; 
+  width: 300px; 
   height: 525px;
   padding: 1em;
   display: flex;
@@ -247,7 +247,7 @@ header a:hover {
   color: white;
   background: rgba(0, 0, 0, 0.32);
   border-radius: 13px;
-  width: 760px; 
+  width: 660px; 
   height: 525px;
   padding: 1em;
   /* width: 40em; */
@@ -296,11 +296,11 @@ header a:hover {
 }
 
 .games-container {
-  margin-top: 2.6em;
+  margin-top: 1.1em;
   width: 100%;
   height: 91%;
   display: grid;
-  column-gap: 1.4em;
+  row-gap: 3.2em;
   align-items: top;
   justify-items: center;
   grid-template: auto auto / repeat(3, 1fr);
