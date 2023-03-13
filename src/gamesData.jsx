@@ -30,13 +30,13 @@ export default [
         path: "tenzies"
     },
     {
-        name: "something",
+        name: "snake game",
         price: 24,
         basket: false,
-        play: false,
+        play: true,
         id: 4,
         key: 4,
-        path: ""
+        path: "snakegame"
     },
     {
         name: "example",
