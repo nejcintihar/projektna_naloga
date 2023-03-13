@@ -11,8 +11,8 @@ export default function About() {
                             <h1 className="hero-gaming">Gaming</h1>
                             <h1 className="hero-world">World</h1>
                         </div>
-                <img src={glow} alt="" className="fuck-css-and-my-life" />
-                </div>
+                              <img src={glow} alt="" className="fuck-css-and-my-life" />
+            </div>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Laudantium accusamus ipsum veniam hic alias velit deleniti ipsam consequatur molestiae quasi?
