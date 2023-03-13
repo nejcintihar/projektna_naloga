@@ -11,14 +11,13 @@ export default [
         path: "tictactoe"
     },
     {
-        name: "crazy 8",
+        name: "snake",
         price: 30,
         basket: false,
         play: true,
         id: 2,
         key: 2,
-        path: "",
-        icon: "FaFacebookF"
+        path: "snakegame",
     },
     {
         name: "tenzies",
@@ -30,13 +29,13 @@ export default [
         path: "tenzies"
     },
     {
-        name: "snake game",
+        name: "something",
         price: 24,
         basket: false,
-        play: true,
+        play: false,
         id: 4,
         key: 4,
-        path: "snakegame"
+        path: ""
     },
     {
         name: "example",
