@@ -350,10 +350,6 @@ header a:hover {
   color: white;
 }
 
-/* .info-buttons ::target-text {
-  padding: .2em;
-} */
-
 .no-trial {
   background: linear-gradient(266.25deg, #F19408 10.22%, #A37500 88.43%);
   padding: .3em .6em;
