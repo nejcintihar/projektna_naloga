@@ -319,6 +319,8 @@ header a:hover {
 
 .body-of-game {
   background: var(--card-background);
+ /*  background-image: url("./assets/lajnus.png");
+  background-size: cover; */
   width: 100%;
   height: 160px;
   border-radius: 10px 10px 0 0;
