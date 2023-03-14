@@ -14,11 +14,14 @@ export default function About() {
                               <img src={glow} alt="" className="fuck-css-and-my-life" />
             </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laudantium accusamus ipsum veniam hic alias velit deleniti ipsam consequatur molestiae quasi?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id necessitatibus veritatis 
-                            aliquid corporis rem odit eius at dolores mollitia expedita maiores
-                            explicabo omnis, natus ex hic debitis facilis ea.
+                        Welcome to our humble abode, where you can find the crème de la crème of terrible online video games! We pride ourselves on being the ultimate purveyor of virtual disappointment, offering a vast selection of games that will make you question your life choices.
+                        <br />
+Our mission is simple: to provide you with games so bad that you'll wish you never laid eyes on them. 
+Our games will have you laughing, crying, and wondering how on earth they ever got made.<br /><br />
+You're here for the sheer joy of playing games so terrible that they're actually kind of amazing. 
+And we've got plenty of those to go around.<br /><br />
+Don't blame us when you realize you've wasted hours of your life on a game that was barely functional.<br />
+At the end of the day, we may not be heroes, but we're certainly providing a service that no one asked for. So go ahead, rent that bad game and experience the joy of virtual regret. We won't judge. 
                         </p>
             {/*  <img src={glow} className="hero-img"></img> */}
         </div>

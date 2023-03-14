@@ -21,6 +21,7 @@ body {
   --remove-background: linear-gradient(268.83deg, rgba(207, 242, 240, 0.73) 2%, rgba(217, 217, 218, 0.73) 51.25%, rgba(243, 231, 240, 0.73) 96.52%);
   --blue-styled: linear-gradient(269.03deg, #0A8495 3.53%, #1b70bf 79.81%);
   --text-color: #D9DDE2;
+  --border-wrappers: rgba(182, 182, 182, 0.133);
 }
 
 .the-gaming-world-hero {
@@ -106,7 +107,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 4em;
-  width: 60%;
+  width: 25em;
   margin-left: auto;
   border-radius: .4em;
 }
@@ -130,14 +131,13 @@ header a:hover {
 .login-button {
   background: linear-gradient(84.3deg, #1A78CF -11.45%, #B163EE 70.14%, #FE19BE 112.52%);
   color: rgb(198, 198, 198);
-  margin-left: auto;
+  margin-left: 2em;
   margin-right: 1em;
   border: none;
   border-radius: .5em;
   width: 5em;
   font-size: 1.4rem;
   height: 1.5em;
-
   font-weight: 700;
   box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.25);
 }
@@ -199,19 +199,22 @@ header a:hover {
   max-width: 960px;
   margin: auto;
   margin-top: 6em;
-  gap: 2em;
+  padding-bottom: 0;
+  gap: 1.5em;
 }
 
 .checkout-wrapper {
   color: var(--text-color);
   background: rgba(0, 0, 0, 0.32);
   border-radius: 13px;
-  width: 350px; 
+  width: 300px; 
   height: 525px;
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid var(--border-wrappers);
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 .checkout-wrapper h1:nth-of-type(3) {
@@ -238,7 +241,7 @@ header a:hover {
   margin-top: .2em;
   border-bottom: 2px solid rgba(205, 205, 205, 0.1);
   padding-bottom: .2em;
-  margin-bottom: .4em;
+  margin-bottom: .8em;
   font-weight: 600;
 }
 
@@ -246,10 +249,13 @@ header a:hover {
   color: white;
   background: rgba(0, 0, 0, 0.32);
   border-radius: 13px;
-  width: 760px; 
+  width: 660px; 
   height: 525px;
   padding: 1em;
+  border: 1px solid var(--border-wrappers);
   /* width: 40em; */
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
+  
 }
 
 .games-title {
@@ -295,11 +301,11 @@ header a:hover {
 }
 
 .games-container {
-  margin-top: 1.5em;
+  margin-top: 1.1em;
   width: 100%;
   height: 91%;
   display: grid;
-  gap: 1em;
+  row-gap: 2.9em;
   align-items: top;
   justify-items: center;
   grid-template: auto auto / repeat(3, 1fr);
@@ -308,6 +314,7 @@ header a:hover {
 .game-holder-main {
     width: 150px;
     border-radius: 10px;
+    
 }
 
 .body-of-game {
@@ -318,7 +325,10 @@ header a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: white
+  color: white;
+  border: 1px solid rgba(157, 157, 157, 0.37);
+  border-bottom: none;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.112);
 }
 
 .body-of-game h1 {
@@ -330,19 +340,32 @@ header a:hover {
 
 .play-now {
   background: var(--green);
-  padding: .3em;
+  padding: .3em .5em;
   border-radius: 0 10px 0 0;
   font-size: .8rem;
   user-select: none;
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   background-size: 130%;
   background-position: right;
-  transition: background-position 0.2s;
+  transition: background-position 0.2s, color .3s;
 }
 
 .play-now:hover {
   background-position: left;
+  color: white;
+}
+
+.no-trial {
+  background: linear-gradient(266.25deg, #F19408 10.22%, #A37500 88.43%);
+  padding: .3em .6em;
+  border-radius: 0 10px 0 0;
+  
+  font-size: .8rem;
+  user-select: none;
+  text-decoration: none;
+  color: var(--text-color);
+  color: #272727;
 }
 
 .game-price {
@@ -350,8 +373,12 @@ header a:hover {
   background-color: var(--remove-background);
   font-size: .8rem;
   padding: .3em;
+  font-weight: 600;
+  user-select: none;
+  background: var(--card-background);
   margin-right: 0;
   border-radius: 12px 0 0 0;
+  color: var(--text-color)
 }
 
 .remove-from-basket {
@@ -369,6 +396,9 @@ header a:hover {
   text-decoration: none;
   user-select: none;
   cursor: pointer;
+  border: 1px solid rgba(20, 20, 20, 0.572);
+  border-top: none;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.112);
 }
 
 .game-name {
@@ -377,7 +407,7 @@ header a:hover {
 }
 
 .add-from-basket {
-  height: 40px;
+  height: 42.45px;
   background: var(--blue-styled);
   width: 100%;
   padding: .5em;
@@ -385,19 +415,23 @@ header a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 0 0px 10px 10px;
-  color:white;
-  font-weight: 500;
-  font-size: .75rem;
+  color:var(--text-color);
+  font-weight: 400;
+  font-size: .85rem;
   user-select: none;
   cursor: pointer;
-  transition:background-position .2s, transform 0.15s;
+  transition:background-position .2s, transform 0.15s, color .2s;
   background-size: 130%;
   background-position: left;
+  border: 1px solid rgba(61, 61, 61, 0.57);
+  border-top: none;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.112);
 }
 
 .add-from-basket:hover{
   background-position: right;
   transform: translateY(-3px);
+  color: white;
 }
 
 .info-buttons {
@@ -490,6 +524,7 @@ header a:hover {
   user-select: none;
   color: var(--text-color);
   transition: color .5s;
+  
 }
 
 .checkout-container:hover {
@@ -517,4 +552,5 @@ header a:hover {
 .total-items-style {
   color: #5C8ED9;
   margin-top: auto;
+  font-weight: 400;
 }
