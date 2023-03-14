@@ -10,7 +10,7 @@ const snakeGameStyle = `
     height: ${height * tileSize}px;
     position: absolute;
     top: 50%;
-    left: 38%;
+    left: 35%;
     border: 3px solid black;
   }
 `;
