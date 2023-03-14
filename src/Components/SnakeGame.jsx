@@ -5,14 +5,15 @@ const width = 40;
 const height = 40;
 
 const snakeGameStyle = `
-  .snake-game {
-    width: ${width * tileSize}px;
-    height: ${height * tileSize}px;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    border: 3px solid black;
-  }
+.snake-game {
+  width: ${width * tileSize}px;
+  height: ${height * tileSize}px;
+  position: absolute;
+  border: 3px solid black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 `;
 
 
@@ -175,17 +176,26 @@ function SnakeGame() {
     
       return (
         <div
-          className="snake-game"
-          tabIndex={0}
-          onKeyDown={handleKeyPress}
-          style={{ width: `${width * tileSize}px`, height: `${height * tileSize}px`, position: "relative" }}
-          autoFocus 
-        >
-          {draw()}
-          <style>{snakeGameStyle}</style>
-        </div>
+        className="snake-game"
+        tabIndex={0}
+        onKeyDown={handleKeyPress}
+        style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+        autoFocus
+      >
+        {draw()}
+        <style>
+          {`.snake-game {
+            width: ${width * tileSize}px;
+            height: ${height * tileSize}px;
+            position: absolute;
+            border: 3px solid black;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }`}
+        </style>
+      </div>
       );
     }
     
     export default SnakeGame;
-        
