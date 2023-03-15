@@ -6,7 +6,7 @@ import reactLogo from './assets/react.svg'
 import "./index.css"
 import Tenzies from "./Components/Tenzies"
 import TicTacToe from "./Components/TicTacToe"
-
+import Login from "./Components/Login"
 
 import About from "./Components/About"
 import Games from "./Components/Games"
@@ -18,7 +18,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<About />} />
+        <Route path="login" element={<Login />} />
+          <Route element={<About />} />
           <Route path="games">
             <Route index element={<Games />} />
             <Route path="tenzies" element={<Tenzies />} />
