@@ -1,7 +1,7 @@
-import "../styles/styles.css"
+import "../../styles/styles.css"
 import { useState, useEffect } from "react"
-import Square from "../Components/Square"
-import { Patterns } from "./Patterns"
+import Square from "../Square"
+import { Patterns } from "../Patterns"
 
 function TicTacToe() {
   const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""]);

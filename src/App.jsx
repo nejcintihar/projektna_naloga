@@ -2,14 +2,14 @@ import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layouts/Layout"
 import "./styles/index.css"
-import Tenzies from "./Components/Tenzies"
-import TicTacToe from "./Components/TicTacToe"
+import Tenzies from "./Components/Games/Tenzies"
+import TicTacToe from "./Components/Games/TicTacToe"
 import Login from "./Components/Login"
 
 import About from "./Components/About"
 import Games from "./Components/Games"
 import Contact from "./Components/Contact"
-import SnakeGame from "./Components/SnakeGame"
+import SnakeGame from "./Components/Games/SnakeGame"
 
 function App() {
 
