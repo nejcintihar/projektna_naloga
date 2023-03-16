@@ -1,9 +1,7 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layouts/Layout"
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import "./index.css"
+import "./styles/index.css"
 import Tenzies from "./Components/Tenzies"
 import TicTacToe from "./Components/TicTacToe"
 import Login from "./Components/Login"

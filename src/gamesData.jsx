@@ -1,5 +1,3 @@
-
-
 export default [
     {
         name: "tic tac toe",
@@ -29,13 +27,13 @@ export default [
         path: "tenzies"
     },
     {
-        name: "something",
+        name: "crazy 8",
         price: 24,
         basket: false,
-        play: false,
+        play: true,
         id: 4,
         key: 4,
-        path: ""
+        path: "crazy8"
     },
     {
         name: "example",

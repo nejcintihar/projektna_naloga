@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../styles/index.css";
 import glow from "../assets/hero-img.png";
 
 export default function About() {

@@ -1,4 +1,4 @@
-import "../styles.css"
+import "../styles/styles.css"
 import { useState, useEffect } from "react"
 import Square from "../Components/Square"
 import { Patterns } from "./Patterns"
