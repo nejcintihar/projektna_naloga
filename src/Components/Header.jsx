@@ -1,9 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom"
 import "../index.css"
-import logo from "../assets/Epic_Games_logo.svg"
-import Applelogo from "../assets/Apple_logo.svg"
-import { FaGamepad } from "react-icons/fa"
 
 export default function Header() {
 
@@ -16,8 +13,7 @@ export default function Header() {
 
     return (
         <header >
-            <FaGamepad  className="logo-header"/>
-            {/* <img src={ FaGamepad } width="22px" className="logo-header"></img> */}
+           
             <nav className="header-nav">
                     <NavLink to="."
                         style={({isActive}) => isActive ? activeStyles : null}
@@ -29,7 +25,7 @@ export default function Header() {
                         style={({isActive}) => isActive ? activeStyles : null}
                     >Contact</NavLink>
             </nav>
-            <button className="login-button">Login</button>
+            <button className="login-button"><Link to="/login">Login</Link></button>
         </header>
     )
 }
