@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "./context/AuthProvider";
+import "../styles/login.css";
+import Games from './Games';
 
 const LOGIN_URL = '/auth';
 
@@ -25,7 +27,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post(LOGIN_URL,
+            const response = await axios.post(<Games />,
                 JSON.stringify({ user, pwd }),
                 {
                     headers: { 'Content-Type': 'application/json' },
@@ -53,7 +55,6 @@ const Login = () => {
             errRef.current.focus();
         }
     }
-
     return (
         <>
             {success ? (
@@ -67,36 +68,36 @@ const Login = () => {
             ) : (
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <h1>Sign In</h1>
-                    <form onSubmit={handleSubmit}>
-                        <label htmlFor="username">Username:</label>
-                        <input
-                            type="text"
-                            id="username"
-                            ref={userRef}
-                            autoComplete="off"
-                            onChange={(e) => setUser(e.target.value)}
-                            value={user}
-                            required
-                        />
-
-                        <label htmlFor="password">Password:</label>
-                        <input
-                            type="password"
-                            id="password"
-                            onChange={(e) => setPwd(e.target.value)}
-                            value={pwd}
-                            required
-                        />
-                        <button>Sign In</button>
-                    </form>
-                    <p>
-                        Need an Account?<br />
-                        <span className="line">
-                            {/*put router link here*/}
-                            <a href="#">Sign Up</a>
-                        </span>
-                    </p>
+                    <div className="box">
+                        <form onSubmit={handleSubmit}>
+                            <h1>Sign In</h1>
+                                <div className="inputBox">
+                                    <input
+                                        type="text"
+                                        id="username"
+                                        ref={userRef}
+                                        autoComplete="off"
+                                        onChange={(e) => setUser(e.target.value)}
+                                        value={user}
+                                        required
+                                    />
+                                    <span>Username:</span>
+                                </div>
+                                <div className="inputBox">
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        onChange={(e) => setPwd(e.target.value)}
+                                        value={pwd}
+                                        required
+                                    />
+                                    <span>Password:</span>
+                                </div>
+                            <input type="submit" value="Login"/>
+                            <p>Need an Account?</p>
+                            <input type="submit" value="Sign in"/>
+                        </form>
+                    </div>
                 </section>
             )}
         </>
