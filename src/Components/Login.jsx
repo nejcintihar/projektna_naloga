@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "./context/AuthProvider";
 import "../styles/login.css";
-import Games from './Games';
 
 const LOGIN_URL = '/auth';
 
@@ -14,6 +13,7 @@ const Login = () => {
     const [pwd, setPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
+    const [admin, setAdmin] = useState(false);
 
     useEffect(() => {
         userRef.current.focus();
@@ -24,46 +24,39 @@ const Login = () => {
     }, [user, pwd])
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        try {
-            const response = await axios.post(<Games />,
-                JSON.stringify({ user, pwd }),
-                {
-                    headers: { 'Content-Type': 'application/json' },
-                    withCredentials: true
-                }
-            );
-            console.log(JSON.stringify(response?.data));
-            //console.log(JSON.stringify(response));
-            const accessToken = response?.data?.accessToken;
-            const roles = response?.data?.roles;
-            setAuth({ user, pwd, roles, accessToken });
-            setUser('');
-            setPwd('');
+        console.log(user, pwd);
+        if(user === "admin" && pwd === "admin"){
+            setAdmin(true);
             setSuccess(true);
-        } catch (err) {
-            if (!err?.response) {
-                setErrMsg('No Server Response');
-            } else if (err.response?.status === 400) {
-                setErrMsg('Missing Username or Password');
-            } else if (err.response?.status === 401) {
-                setErrMsg('Unauthorized');
-            } else {
-                setErrMsg('Login Failed');
-            }
-            errRef.current.focus();
+
+        }
+        else {
+            setSuccess(true);
         }
     }
     return (
-        <>
+        <div>
+            {admin ? (
+                <div>
+                    <div className="admin">
+                        <h1>Welcome back ADMIN</h1>
+                    </div>
+                </div>
+            ) : (
+                <div>
+
+                </div>
+            )}
             {success ? (
                 <section>
-                    <h1>You are logged in!</h1>
-                    <br />
-                    <p>
-                        <a href="#">Go to Home</a>
-                    </p>
+
+                    <div className="loggedIn">
+                        <h1>You are logged in!</h1>
+                        <br />
+                        <h1>
+                            <a href="/">Go to Home</a>
+                        </h1>
+                    </div>
                 </section>
             ) : (
                 <section>
@@ -100,7 +93,7 @@ const Login = () => {
                     </div>
                 </section>
             )}
-        </>
+        </div>
     )
 }
 

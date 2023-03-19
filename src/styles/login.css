@@ -142,5 +142,14 @@ p {
     padding-left:43%;
     font-size: 20px;
 }
+.loggedIn {
+    padding-top: 3%;
+    margin: 0 auto;
+}
 
-
+.loggedIn a {
+    color: white;
+}
+.admin {
+    padding-top: 5%;
+}
