@@ -10,6 +10,7 @@ import About from "./Components/About"
 import Games from "./Components/Games"
 import Contact from "./Components/Contact"
 import SnakeGame from "./Components/Games/SnakeGame"
+import Crazy8 from "./Components/Games/Crazy8"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="tenzies" element={<Tenzies />} />
             <Route path="tictactoe" element={<TicTacToe />} />
             <Route path="snakegame" element={<SnakeGame />} />
+            <Route path="crazy8" element={<Crazy8/>} />
           </Route>
           <Route path="contact" element={<Contact />} />
         </Route>
